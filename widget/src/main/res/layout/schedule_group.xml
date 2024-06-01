@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:parentTag="android.widget.FrameLayout">
 
-    <me.wxc.widget.schedule.ScheduleView
+    <com.frank.widget.schedule.ScheduleView
         android:id="@+id/scheduleView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

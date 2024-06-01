@@ -18,7 +18,7 @@
         android:textSize="16sp"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <me.wxc.widget.common.KVItemView
+    <com.frank.widget.common.KVItemView
         android:id="@+id/date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,7 +26,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title" />
 
-    <me.wxc.widget.common.KVItemView
+    <com.frank.widget.common.KVItemView
         android:id="@+id/beginTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/date" />
 
-    <me.wxc.widget.common.KVItemView
+    <com.frank.widget.common.KVItemView
         android:id="@+id/endTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/beginTime" />
 
-    <me.wxc.widget.common.KVItemView
+    <com.frank.widget.common.KVItemView
         android:id="@+id/repeatMode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/endTime" />
 
-    <me.wxc.widget.common.KVItemView
+    <com.frank.widget.common.KVItemView
         android:id="@+id/remindMode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

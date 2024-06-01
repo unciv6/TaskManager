@@ -4,14 +4,13 @@ plugins {
 }
 
 android {
-    namespace 'me.wxc.widget'
+    namespace 'com.frank.taskmanager'
+
     compileSdk 32
 
     defaultConfig {
         minSdk 24
         targetSdk 32
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:parentTag="android.widget.LinearLayout">
 
-    <me.wxc.widget.flow.header.FlowHeaderGroup
+    <com.frank.widget.flow.header.FlowHeaderGroup
         android:id="@+id/flowHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -29,7 +29,7 @@
             android:src="@drawable/ic_up_arrow"/>
     </FrameLayout>
 
-    <me.wxc.widget.flow.list.ScheduleFlowView
+    <com.frank.widget.flow.list.ScheduleFlowView
         android:id="@+id/scheduleList"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

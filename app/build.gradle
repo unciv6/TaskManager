@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'me.wxc.todolist'
     compileSdk 33
+    namespace 'com.frank.taskmanager'
 
     defaultConfig {
-        applicationId "me.wxc.todolist"
+        applicationId "com.frank.taskmanager"
         minSdk 24
         targetSdk 33
         versionCode 1

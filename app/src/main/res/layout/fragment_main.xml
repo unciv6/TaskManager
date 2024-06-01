@@ -43,14 +43,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:tint="@color/black1" />
 
-    <me.wxc.widget.schedule.ScheduleGroup
+    <com.frank.widget.schedule.ScheduleGroup
         android:id="@+id/schedule_group"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/yyyy_m" />
 
-    <me.wxc.widget.calender.MonthGroup
+    <com.frank.widget.calender.MonthGroup
         android:id="@+id/monthGroup"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -61,7 +61,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/yyyy_m" />
 
-    <me.wxc.widget.flow.FlowContainer
+    <com.frank.widget.flow.FlowContainer
         android:id="@+id/flowGroup"
         android:layout_width="match_parent"
         android:layout_height="0dp"
