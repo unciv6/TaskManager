@@ -11,6 +11,7 @@ import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.frank.taskmanager.R
+import java.time.DayOfWeek
 import java.time.LocalDate
 
 /**
@@ -78,11 +79,15 @@ class MyHolder(itemView: View) : ViewHolder(itemView) {
 
         ceil.dates.forEachIndexed { index, date ->
             val textView = days[index]
-            if (date.isToday()) {
-                textView.setTextColor(Color.BLUE)
-                textView.setBackgroundResource(R.drawable.rounded_background)
+            if (date.isWeekend()) {
+                textView.setTextColor(Color.RED)
             } else {
                 textView.setTextColor(Color.GRAY)
+            }
+            if (date.isToday()) {
+                textView.setTextColor(Color.WHITE)
+                textView.setBackgroundResource(R.drawable.rounded_background)
+            } else {
                 textView.setBackgroundResource(android.R.color.transparent) // 如果不是今天，移除背景或设置成透明
             }
         }
@@ -100,7 +105,7 @@ class MyHolder(itemView: View) : ViewHolder(itemView) {
             if (isRedBackground2) {
                 groupB.setBackgroundResource(android.R.color.transparent)
             } else {
-                groupB.setBackgroundResource(R.drawable.rounded_background_holo)
+                groupB.setBackgroundResource(R.drawable.rounded_background_holo2)
             }
             isRedBackground2 = !isRedBackground2
         }
@@ -117,5 +122,10 @@ class MyHolder(itemView: View) : ViewHolder(itemView) {
     @RequiresApi(Build.VERSION_CODES.O)
     fun LocalDate.isToday(): Boolean {
         return this == LocalDate.now()
+    }
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    fun LocalDate.isWeekend(): Boolean {
+        return this.dayOfWeek == DayOfWeek.SATURDAY || this.dayOfWeek == DayOfWeek.SUNDAY
     }
 }
