@@ -1,0 +1,5 @@
+<!-- res/drawable/rounded_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/system_accent1_200" /> <!-- 这里设置背景颜色，可以替换成你需要的颜色 -->
+    <corners android:radius="10dp" /> <!-- 设置圆角半径 -->
+</shape>
